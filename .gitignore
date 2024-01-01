@@ -11,8 +11,7 @@
 
 # Build artifacts
 .clang_complete
-#.build/ # commenting this out allows git to store our compiled firmware
-.build/obj_*
+.build/
 *.elf
 *.log
 *.lss

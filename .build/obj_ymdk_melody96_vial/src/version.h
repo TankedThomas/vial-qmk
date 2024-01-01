@@ -25,10 +25,10 @@
 
 #pragma once
 
-#define QMK_VERSION "08c34e-dirty"
-#define QMK_BUILDDATE "2024-01-02-00:01:19"
-#define QMK_GIT_HASH  "08c34ebc7a*"
+#define QMK_VERSION "38312e-dirty"
+#define QMK_BUILDDATE "2024-01-02-02:06:54"
+#define QMK_GIT_HASH  "38312ed483*"
 #define CHIBIOS_VERSION "11edb1"
 #define CHIBIOS_CONTRIB_VERSION "develop_2021_q3-394-gda78eb"
 
-#define BUILD_ID ((uint32_t)0x00745604)
+#define BUILD_ID ((uint32_t)0x00F4EB47)

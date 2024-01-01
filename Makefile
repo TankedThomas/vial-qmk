@@ -174,7 +174,7 @@ define PARSE_KEYBOARD
     ifneq ($$(DEFAULT_FOLDER),$$(CURRENT_KB))
         $$(eval include $(ROOT_DIR)/keyboards/$$(DEFAULT_FOLDER)/rules.mk)
     endif
-    CURRENT_KB := $$(DEFAULT_FOLDER)
+    export CURRENT_KB := $$(DEFAULT_FOLDER)
 
     # 5/4/3/2/1
     KEYBOARD_FOLDER_PATH_1 := $$(CURRENT_KB)
@@ -245,7 +245,7 @@ endef
 # Note that we are not directly calling the command here, but instead building a list,
 # which will later be processed
 define PARSE_KEYMAP
-    CURRENT_KM = $1
+    export CURRENT_KM = $1
     # The rest of the rule is the target
     # Remove the leading ":" from the target, as it acts as a separator
     MAKE_TARGET := $$(patsubst :%,%,$$(RULE))
