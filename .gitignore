@@ -11,7 +11,8 @@
 
 # Build artifacts
 .clang_complete
-.build/
+#.build/ # commenting this out allows git to store our compiled firmware
+.build/obj_*
 *.elf
 *.log
 *.lss
@@ -26,7 +27,7 @@ api_data/v1
 quantum/version.h
 *.bin
 *.eep
-*.hex
+#*.hex # commenting this out allows git to store our compiled firmware
 *.qmk
 *.uf2
 *.vfw
